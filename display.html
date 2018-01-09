@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>list of files</title>
+    <style>
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+<a> the result is :</a> <br/>
+<table>
+<tr>
+  <tr>
+    <th>place</th>
+    <th>status</th>
+  </tr>
+<tr>
+        {% for i in flist %}
+<td> {{ i[0] }}</td>
+                      <td>{{ i[1] }}</td>
+            </tr>
+        {% endfor %}
+
+</table>
+</body>
+</html>
